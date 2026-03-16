@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juliet&rsquo;s Dilemma — JCY.Studio</title>
+  <meta name="description" content="100 levels. Infinite shapes. Connect every color, fill every cell — if the grid lets you.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Neon hero treatment */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 20% 50%, rgba(220,80,255,0.12) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 80% 40%, rgba(100,180,255,0.08) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 40% at 50% 80%, rgba(220,80,255,0.06) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+  </style>
+</head>
+<body class="accent-violet">
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">JCY.Studio</a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html#games">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-glow glow-accent glow-neon"></div>
+    <div class="hero-glow glow-accent-r glow-neon" style="animation-delay:2s;"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1 class="hero-tagline fade-up">100 levels. Infinite shapes. One rule.</h1>
+          <p class="hero-body fade-up fade-up-d1">Connect every color. Fill every cell. But the grid has other plans.</p>
+          <a href="#" class="btn btn-accent fade-up fade-up-d2">Available on the App Store</a>
+        </div>
+        <div class="device-group fade-up fade-up-d3">
+          <img src="images/juliet-1.jpg" alt="Juliet's Dilemma gameplay — drawing neon paths to connect colored dots on a flower-themed grid" class="device-mockup">
+          <img src="images/juliet-2.jpg" alt="Juliet's Dilemma gameplay — completed puzzle with all neon paths filled on a lighthouse-themed grid" class="device-mockup">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Description -->
+  <section class="content-section">
+    <div class="container">
+      <h2 class="fade-up">The grid has other plans</h2>
+      <p class="fade-up fade-up-d1">Juliet&rsquo;s Dilemma takes the classic color-path puzzle and breaks its rules. Where other games give you a square grid, Juliet&rsquo;s Dilemma gives you donuts, diamonds, hourglasses, L-shapes, and more &mdash; 100 hand-validated levels across 8 difficulty tiers that challenge you to think differently about space and connection.</p>
+      <p class="fade-up fade-up-d2">Draw paths, lift and resume, let the synthesized music carry you through. Built on a 4-channel procedural music engine with neon visuals that pulse with every solved pair, this is a puzzle game that rewards the stubborn and surprises the experienced.</p>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="content-section" style="padding-top:0;">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-item fade-up">
+          <h3>100 levels across 8 tiers</h3>
+        </div>
+        <div class="feature-item fade-up fade-up-d1">
+          <h3>7 shaped grid masks</h3>
+        </div>
+        <div class="feature-item fade-up fade-up-d2">
+          <h3>Lift-and-resume drawing</h3>
+        </div>
+        <div class="feature-item fade-up fade-up-d3">
+          <h3>Procedural 4-channel music</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 JCY.Studio &middot; All rights reserved</p>
+    </div>
+  </footer>
+
+</body>
+</html>
