@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mnemora — JCY.Studio</title>
+  <meta name="description" content="A memory card game with lush illustrated scenes and 100 levels of escalating challenge. Each level is a world waiting to be uncovered.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 20% 50%, rgba(168,85,247,0.12) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 80% 40%, rgba(192,132,252,0.08) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 40% at 50% 80%, rgba(168,85,247,0.06) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .coming-soon-pill {
+      display: inline-block;
+      background: #a855f7;
+      color: var(--black);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+    .screenshot-placeholder {
+      width: 280px;
+      aspect-ratio: 9/16;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 32px;
+      border: 3px solid rgba(255,255,255,0.1);
+      background: linear-gradient(135deg, rgba(168,85,247,0.15), rgba(192,132,252,0.08));
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      box-shadow:
+        0 24px 80px rgba(0,0,0,0.5),
+        0 0 0 1px rgba(255,255,255,0.04);
+    }
+    .cta-strip {
+      text-align: center;
+      padding: 96px 0;
+      border-top: 1px solid var(--border);
+    }
+    .cta-strip h2 {
+      color: var(--white);
+      margin-bottom: 12px;
+      font-style: italic;
+    }
+    .cta-strip p {
+      color: var(--muted);
+      font-weight: 300;
+      max-width: 480px;
+      margin: 0 auto 20px;
+    }
+    .cta-strip a {
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .btn-disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="accent-purple">
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">JCY.Studio</a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html#games">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-glow glow-accent glow-neon"></div>
+    <div class="hero-glow glow-accent-r glow-neon" style="animation-delay:2s;"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <span class="coming-soon-pill fade-up">Coming Soon</span>
+          <h1 class="hero-tagline fade-up fade-up-d1">Remember everything. Reveal the world.</h1>
+          <p class="hero-body fade-up fade-up-d2">A memory card game with lush illustrated scenes and 100 levels of escalating challenge. Each level is a world waiting to be uncovered.</p>
+          <a href="#" class="btn btn-accent btn-disabled fade-up fade-up-d3">Available on the App Store</a>
+        </div>
+        <div class="device-group fade-up fade-up-d3">
+          <div class="screenshot-placeholder">Screenshot coming soon</div>
+          <div class="screenshot-placeholder" style="margin-top:48px;">Screenshot coming soon</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Description -->
+  <section class="content-section">
+    <div class="container">
+      <h2 class="fade-up">Memory, reimagined</h2>
+      <p class="fade-up fade-up-d1">Mnemora takes the classic memory card game &mdash; flip, match, remember &mdash; and wraps it in something worth stopping for. Each level reveals a different illustrated scene: forests at dusk, reef systems, ancient maps, celestial charts. Find the matches and the world comes into focus.</p>
+      <p class="fade-up fade-up-d2">One hundred levels across eight difficulty tiers means Mnemora grows alongside you. Early levels ease you into the mechanics. Later ones challenge your working memory, your pattern recognition, and your patience in equal measure.</p>
+      <p class="fade-up fade-up-d3">Like every JCY.Studio game: no ads, no data collected, no internet required. You buy it once. You own it forever.</p>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="content-section" style="padding-top:0;">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-item fade-up">
+          <h3>100 levels across 8 tiers</h3>
+          <p style="color:var(--muted); font-weight:300; font-size:0.92rem; margin-top:6px;">From gentle warmups to genuinely taxing grids.</p>
+        </div>
+        <div class="feature-item fade-up fade-up-d1">
+          <h3>Lush illustrated scenes</h3>
+          <p style="color:var(--muted); font-weight:300; font-size:0.92rem; margin-top:6px;">Each level reveals a unique hand-crafted world.</p>
+        </div>
+        <div class="feature-item fade-up fade-up-d2">
+          <h3>No time pressure</h3>
+          <p style="color:var(--muted); font-weight:300; font-size:0.92rem; margin-top:6px;">Think at your own pace. The puzzles wait.</p>
+        </div>
+        <div class="feature-item fade-up fade-up-d3">
+          <h3>Fully offline</h3>
+          <p style="color:var(--muted); font-weight:300; font-size:0.92rem; margin-top:6px;">No network required. No account needed.</p>
+        </div>
+        <div class="feature-item fade-up fade-up-d4">
+          <h3>Zero ads</h3>
+          <p style="color:var(--muted); font-weight:300; font-size:0.92rem; margin-top:6px;">One price. Nothing hidden. Nothing interrupted.</p>
+        </div>
+        <div class="feature-item fade-up fade-up-d4">
+          <h3>Buy once, own forever</h3>
+          <p style="color:var(--muted); font-weight:300; font-size:0.92rem; margin-top:6px;">Your copy is yours. No subscriptions, ever.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Mnemora is in development.</h2>
+      <p>We&rsquo;ll announce when it&rsquo;s ready for the App Store.</p>
+      <a href="/support">Contact us to stay in the loop &rarr;</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 JCY.Studio &middot; All rights reserved</p>
+    </div>
+  </footer>
+
+</body>
+</html>

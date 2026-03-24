@@ -4,7 +4,7 @@
     {
       "name": "jcy-studio",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8090", "--directory", "/Users/joel/jcy-studio"],
+      "runtimeArgs": ["-m", "http.server", "8090", "--directory", "/Users/joel/Development.nosync/jcy-studio"],
       "port": 8090
     }
   ]

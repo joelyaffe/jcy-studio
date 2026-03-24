@@ -254,7 +254,7 @@ section {
 /* ── Game Cards (index) ──────────────────────────────────── */
 .games-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 24px;
 }
 
@@ -304,6 +304,45 @@ section {
 .game-card:nth-child(1) { --accent: #64b4ff; }
 .game-card:nth-child(2) { --accent: #ffbe64; }
 .game-card:nth-child(3) { --accent: #dc50ff; }
+.game-card:nth-child(4) { --accent: #a855f7; }
+
+/* Coming-soon card */
+.game-card.coming-soon {
+  pointer-events: none;
+  opacity: 0.85;
+  position: relative;
+}
+
+.game-card.coming-soon .coming-soon-badge {
+  display: inline-block;
+  background: #a855f7;
+  color: var(--black);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 12px;
+  border-radius: 100px;
+  margin-bottom: 12px;
+}
+
+/* Honest-note callout */
+.honest-note {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 28px 32px;
+  background: rgba(74, 222, 128, 0.06);
+  border-left: 3px solid rgba(74, 222, 128, 0.4);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  color: var(--muted);
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+/* Purple accent override */
+body.accent-purple { --accent: #a855f7; }
 
 /* ── Device Placeholder ──────────────────────────────────── */
 .device-placeholder {
