@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crazy Cat Soccer — JCY.Studio</title>
+  <meta name="description" content="A cat goalie blocks everything you throw at it. Sports balls, fish, watermelons, lasers. 25 levels of escalating chaos.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body.accent-orange { --accent: #f97316; }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 20% 50%, rgba(249,115,22,0.12) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 80% 40%, rgba(251,146,60,0.08) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 40% at 50% 80%, rgba(249,115,22,0.06) 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .coming-soon-pill {
+      display: inline-block;
+      background: #f97316;
+      color: var(--black);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+
+    .screenshot-placeholder {
+      width: 280px;
+      aspect-ratio: 16/9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      border: 3px solid rgba(255,255,255,0.1);
+      background: linear-gradient(135deg, rgba(249,115,22,0.15), rgba(251,146,60,0.08));
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      box-shadow:
+        0 24px 80px rgba(0,0,0,0.5),
+        0 0 0 1px rgba(255,255,255,0.04);
+    }
+
+    .cta-strip {
+      text-align: center;
+      padding: 96px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .cta-strip h2 {
+      color: var(--white);
+      margin-bottom: 12px;
+      font-style: italic;
+    }
+
+    .cta-strip p {
+      color: var(--muted);
+      font-weight: 300;
+      max-width: 480px;
+      margin: 0 auto 20px;
+    }
+
+    .cta-strip a {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .btn-disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    .object-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+      max-width: 640px;
+    }
+
+    .object-tag {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 6px 14px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-weight: 300;
+    }
+  </style>
+</head>
+<body class="accent-orange">
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">JCY.Studio</a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html#games">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <span class="coming-soon-pill fade-up">Coming Soon</span>
+          <h1 class="hero-tagline fade-up fade-up-d1">Block everything. Catch nothing. Try anyway.</h1>
+          <p class="hero-body fade-up fade-up-d2">Drag your cat across the goal mouth. Block the ball. Then the fish. Then the watermelon. Then the laser pointer — and watch everything go sideways.</p>
+          <a href="#" class="btn btn-accent btn-disabled fade-up fade-up-d3">Available on the App Store</a>
+        </div>
+        <div class="device-group fade-up fade-up-d3" style="flex-direction:column; align-items:center; gap:20px;">
+          <div class="screenshot-placeholder">Screenshot coming soon</div>
+          <div class="screenshot-placeholder">Screenshot coming soon</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Description -->
+  <section class="content-section">
+    <div class="container">
+      <h2 class="fade-up">A goalie game for people who love cats</h2>
+      <p class="fade-up fade-up-d1">Crazy Cat Soccer puts a black cat with a small white chest patch between the posts and asks a simple question: how long can you keep them out? Drag the cat anywhere on screen to intercept incoming objects. The faster you react, the more you block. The more you block, the higher your combo.</p>
+      <p class="fade-up fade-up-d2">It starts like a sports game. Soccer balls, tennis balls, basketballs &mdash; manageable. Then the fish arrive. Then the watermelons. By the time the laser pointer shows up, all bets are off. Your cat will follow it. That&rsquo;s not a bug.</p>
+      <p class="fade-up fade-up-d3">Inspired by a real field hockey goalie named Juliet, and the very reasonable hypothesis that cats would be excellent at this if they could just focus.</p>
+
+      <div class="object-list fade-up fade-up-d4">
+        <span class="object-tag">&#x26BD; Soccer ball</span>
+        <span class="object-tag">&#x1F3BE; Tennis ball</span>
+        <span class="object-tag">&#x1F3C0; Basketball</span>
+        <span class="object-tag">&#x1F41F; Fish</span>
+        <span class="object-tag">&#x1F349; Watermelon</span>
+        <span class="object-tag">&#x2693; Anvil</span>
+        <span class="object-tag">&#x1F3B9; Piano</span>
+        <span class="object-tag">&#x1F5B1; Computer mouse</span>
+        <span class="object-tag">&#x1F534; Laser pointer</span>
+        <span class="object-tag">&amp; more&hellip;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="content-section" style="padding-top:0;">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-item fade-up">
+          <h3>25 levels of escalating chaos</h3>
+          <p style="color:var(--muted); font-weight:300; font-size:0.92rem; margin-top:6px;">Objects get faster, smaller, and weirder as you progress.</p>
+        </div>
+        <div class="feature-item fade-up fade-up-d1">
+          <h3>20 object types</h3>
+          <p style="color:var(--muted); font-weight:300; font-size:0.92rem; margin-top:6px;">Sports gear, food, household objects, and things that defy explanation.</p>
+        </div>
+        <div class="feature-item fade-up fade-up-d2">
+          <h3>Combo multiplier</h3>
+          <p style="color:var(--muted); font-weight:300; font-size:0.92rem; margin-top:6px;">Chain blocks to multiply your score. Drop one and the streak resets.</p>
+        </div>
+        <div class="feature-item fade-up fade-up-d3">
+          <h3>Arena soundtrack</h3>
+          <p style="color:var(--muted); font-weight:300; font-size:0.92rem; margin-top:6px;">Procedural music that ramps up with the crowd as your combo grows.</p>
+        </div>
+        <div class="feature-item fade-up fade-up-d4">
+          <h3>5 free levels</h3>
+          <p style="color:var(--muted); font-weight:300; font-size:0.92rem; margin-top:6px;">Try before you buy. Two optional level packs unlock the rest.</p>
+        </div>
+        <div class="feature-item fade-up fade-up-d4">
+          <h3>The laser pointer</h3>
+          <p style="color:var(--muted); font-weight:300; font-size:0.92rem; margin-top:6px;">It pulls your cat toward it. Your cat cannot resist. This is canon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Crazy Cat Soccer is in development.</h2>
+      <p>We&rsquo;ll announce when it&rsquo;s ready for the App Store.</p>
+      <a href="/support">Contact us to stay in the loop &rarr;</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 JCY.Studio &middot; All rights reserved</p>
+    </div>
+  </footer>
+
+</body>
+</html>

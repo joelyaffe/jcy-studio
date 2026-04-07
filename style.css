@@ -279,6 +279,14 @@ section {
   margin-bottom: 16px;
 }
 
+.game-card-icon img {
+  width: 64px;
+  height: 64px;
+  border-radius: 22%;
+  display: block;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
 .game-card h3 {
   color: var(--white);
   margin-bottom: 8px;
@@ -305,10 +313,10 @@ section {
 .game-card:nth-child(2) { --accent: #ffbe64; }
 .game-card:nth-child(3) { --accent: #dc50ff; }
 .game-card:nth-child(4) { --accent: #a855f7; }
+.game-card:nth-child(5) { --accent: #f97316; }
 
 /* Coming-soon card */
 .game-card.coming-soon {
-  pointer-events: none;
   opacity: 0.85;
   position: relative;
 }
