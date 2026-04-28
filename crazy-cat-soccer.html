@@ -21,38 +21,6 @@
       z-index: 0;
     }
 
-    .coming-soon-pill {
-      display: inline-block;
-      background: #f97316;
-      color: var(--black);
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.78rem;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      padding: 6px 16px;
-      border-radius: 100px;
-      margin-bottom: 20px;
-    }
-
-    .screenshot-placeholder {
-      width: 280px;
-      aspect-ratio: 16/9;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 20px;
-      border: 3px solid rgba(255,255,255,0.1);
-      background: linear-gradient(135deg, rgba(249,115,22,0.15), rgba(251,146,60,0.08));
-      color: var(--muted);
-      font-size: 0.88rem;
-      font-weight: 400;
-      letter-spacing: 0.02em;
-      box-shadow:
-        0 24px 80px rgba(0,0,0,0.5),
-        0 0 0 1px rgba(255,255,255,0.04);
-    }
-
     .cta-strip {
       text-align: center;
       padding: 96px 0;
@@ -75,11 +43,6 @@
     .cta-strip a {
       color: var(--accent);
       font-weight: 500;
-    }
-
-    .btn-disabled {
-      opacity: 0.4;
-      pointer-events: none;
     }
 
     .object-list {
@@ -122,14 +85,13 @@
     <div class="container">
       <div class="hero-inner">
         <div class="hero-text">
-          <span class="coming-soon-pill fade-up">Coming Soon</span>
-          <h1 class="hero-tagline fade-up fade-up-d1">Block everything. Catch nothing. Try anyway.</h1>
-          <p class="hero-body fade-up fade-up-d2">Drag your cat across the goal mouth. Block the ball. Then the fish. Then the watermelon. Then the laser pointer — and watch everything go sideways.</p>
-          <a href="#" class="btn btn-accent btn-disabled fade-up fade-up-d3">Available on the App Store</a>
+          <h1 class="hero-tagline fade-up">Block everything. Catch nothing. Try anyway.</h1>
+          <p class="hero-body fade-up fade-up-d1">Drag your cat across the goal mouth. Block the ball. Then the fish. Then the watermelon. Then the laser pointer — and watch everything go sideways.</p>
+          <a href="https://apps.apple.com/us/app/crazy-cat-soccer/id6761732274" class="btn btn-accent fade-up fade-up-d2" target="_blank" rel="noopener">Available on the App Store</a>
         </div>
-        <div class="device-group fade-up fade-up-d3" style="flex-direction:column; align-items:center; gap:20px;">
-          <div class="screenshot-placeholder">Screenshot coming soon</div>
-          <div class="screenshot-placeholder">Screenshot coming soon</div>
+        <div class="device-group fade-up fade-up-d3">
+          <img src="images/crazy-cat-soccer-1.jpg" alt="Crazy Cat Soccer gameplay — cat goalie defending the net" class="device-mockup">
+          <img src="images/crazy-cat-soccer-2.jpg" alt="Crazy Cat Soccer gameplay — incoming objects in tier 1" class="device-mockup">
         </div>
       </div>
     </div>
@@ -193,9 +155,9 @@
   <!-- CTA Strip -->
   <section class="cta-strip">
     <div class="container">
-      <h2>Crazy Cat Soccer is launching soon.</h2>
-      <p>Coming to the App Store this month. No ads, no subscriptions.</p>
-      <a href="support.html">Get in touch to stay in the loop &rarr;</a>
+      <h2>Crazy Cat Soccer is live on the App Store.</h2>
+      <p>One-time unlocks for levels and breeds. No ads. No subscriptions.</p>
+      <a href="https://apps.apple.com/us/app/crazy-cat-soccer/id6761732274" target="_blank" rel="noopener">Download on the App Store &rarr;</a>
     </div>
   </section>
 

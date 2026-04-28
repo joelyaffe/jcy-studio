@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ColorFlow: Worlds — JCY.Studio</title>
+  <meta name="description" content="The next chapter in the ColorFlow puzzle experience. Eight themed worlds, each with its own visual and audio identity. Coming soon.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .coming-soon-pill {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--black);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+
+    .icon-display {
+      width: 240px;
+      height: 240px;
+      border-radius: 48px;
+      box-shadow:
+        0 24px 80px rgba(0,0,0,0.5),
+        0 0 0 1px rgba(255,255,255,0.04);
+    }
+
+    .cta-strip {
+      text-align: center;
+      padding: 96px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .cta-strip h2 {
+      color: var(--white);
+      margin-bottom: 12px;
+      font-style: italic;
+    }
+
+    .cta-strip p {
+      color: var(--muted);
+      font-weight: 300;
+      max-width: 480px;
+      margin: 0 auto 20px;
+    }
+
+    .cta-strip a {
+      color: var(--accent);
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body class="accent-blue">
+
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">JCY.Studio</a>
+      <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html#games">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-glow glow-accent"></div>
+    <div class="hero-glow glow-accent-r"></div>
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <span class="coming-soon-pill fade-up">Coming Soon</span>
+          <h1 class="hero-tagline fade-up fade-up-d1">Same flow. New worlds.</h1>
+          <p class="hero-body fade-up fade-up-d2">The next chapter in the ColorFlow puzzle experience. Eight themed worlds, each with its own visual and audio identity &mdash; from quiet zen gardens to galactic chaos.</p>
+        </div>
+        <div class="device-group fade-up fade-up-d3" style="justify-content:center;">
+          <img src="images/icon-colorflow-worlds.png" alt="ColorFlow: Worlds icon" class="icon-display">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>ColorFlow: Worlds is on the way.</h2>
+      <p>A new chapter in the ColorFlow puzzle experience. Coming soon to the App Store.</p>
+      <a href="support.html">Get in touch to stay in the loop &rarr;</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 JCY.Studio &middot; All rights reserved</p>
+    </div>
+  </footer>
+
+</body>
+</html>
